@@ -62,11 +62,12 @@ class System():
         # prints info on the machine
         def printInfo():
                 try:
-                    print("OS NAME: " + os.getenv("OS"))
-                    print("USERNAME: " + os.getenv("USERNAME"))
-                    print("SYSTEM PROCESSOR ARCHITECTURE: " + os.getenv("PROCESSOR_ARCHITECTURE"))
-                    #print("PAGEFILE: " + os.getenv("PAGEFILE"))
-                    #print("PROCESSOR: " + os.getenv("PROCESSOR"))
+                    print("OS NAME: " + os)
+                    print("COMPUTER NAME: " + computer_name)
+                    print("OS VERSION: " + os_version)
+                    print("OS BUILD: " + os_build)
+                    print("SYSTEM PROCESSOR ARCHITECTURE: " + cpu_architechture)
+                    print("PROCESSOR: " + processor)
                 except:
                     print("Error, could not find info on your machine")
                     input("Press Enter To Exit...")
