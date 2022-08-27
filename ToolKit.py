@@ -71,6 +71,13 @@ class System():
                     print("Error, could not find info on your machine")
                     input("Press Enter To Exit...")
         
+        # this can be used so if your program has dependencies you can easily use this funtion to install required libraries for your program!
+        # Always make sure you have the users permission to install the dependencies/libraries
+        # also make sure the libraries you are using are safe to use
+        def dep_install(self, libname):
+                os.system("cmd /k pip install " + libname)
+        
+        
 
         
         def create_File(self, filepath):
@@ -82,22 +89,13 @@ class System():
             os.remove(filename)
         
 
-        def exec_file(self, filename1):
+        def exec_File(self, filename1):
             os.startfile(filename1)
 
         
         def exec_cmd(self, cmd):
             os.system(cmd)
 
-class playground():
-        def showtime(self):
-            string = strftime('%H:%M:%S %p')
-            print(string)
-        # this can be used so if your program has dependencies you can easily use this funtion to install required libraries for your program!
-        # Always make sure you have the users permission to install the dependencies/libraries
-        # also make sure the libraries you are using are safe to use
-        def install(self, libname):
-                os.system("cmd /k pip install " + libname)
 
 class maths():
     # Basic Math interpreter made for the user
