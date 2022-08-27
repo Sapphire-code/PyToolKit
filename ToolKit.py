@@ -68,6 +68,10 @@ class System():
         
         def create_File(self, filepath):
             open(f"{filepath}", "x")
+        
+        
+        def move_File(self, filepath1, filepath2):
+                os.rename(filepath1, filepath2)
             
         
 
