@@ -60,7 +60,7 @@ class System():
 
 
         # prints info on the machine
-        def printInfo():
+        def printInfo(self):
                 try:
                     print("OS NAME: " + os)
                     print("COMPUTER NAME: " + computer_name)
