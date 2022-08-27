@@ -81,6 +81,9 @@ class System():
         
         def exec_cmd(self, cmd):
             os.system(cmd)
+        
+        def exec_CommandPrompt(self, cmd1):
+                os.system("cmd /k " + cmd1)
 
 
 class maths():
