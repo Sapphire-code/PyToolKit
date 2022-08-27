@@ -55,22 +55,7 @@ class System():
         cpu_architechture = systeminformation.machine
         processor = systeminformation.processor
 
-
-
-
-
-        # prints info on the machine
-        def printInfo(self):
-                try:
-                    print("OS NAME: " + os)
-                    print("COMPUTER NAME: " + computer_name)
-                    print("OS VERSION: " + os_version)
-                    print("OS BUILD: " + os_build)
-                    print("SYSTEM PROCESSOR ARCHITECTURE: " + cpu_architechture)
-                    print("PROCESSOR: " + processor)
-                except:
-                    print("Error, could not find info on your machine")
-                    input("Press Enter To Exit...")
+        
         
         # this can be used so if your program has dependencies you can easily use this funtion to install required libraries for your program!
         # Always make sure you have the users permission to install the dependencies/libraries
