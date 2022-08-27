@@ -147,7 +147,7 @@ class maths():
 
 
 
-class error():
+class errors():
     def cli_err(self):
         print("""'
 '##:::::'##::::'###::::'########::'##::: ##:'####:'##::: ##::'######:::
