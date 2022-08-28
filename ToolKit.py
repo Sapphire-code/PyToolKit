@@ -97,7 +97,7 @@ class maths():
             print("+ is Addition, - is substration, * is Multiplication / is division")
             while True:
                     try:
-                        print(eval(input(">>>")))
+                        print(eval(input("Enter Question> ")))
 
                     except ValueError:
                         print("Error, incorrect value given! Please enter a correct value")
