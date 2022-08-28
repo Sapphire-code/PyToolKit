@@ -61,7 +61,7 @@ class System():
         # Always make sure you have the users permission to install the dependencies/libraries
         # also make sure the libraries you are using are safe to use
         def dep_install(self, libname):
-                os.system("cmd /k pip install " + libname)
+                os.system("pip install {libname}")
         
         
 
