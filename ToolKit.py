@@ -154,11 +154,11 @@ class errors():
         """)
     
     #these 3 show GUI error boxes with the desired text, very convenient for the developer
-    def gui_err_showinfo(self, arg1, arg2):   
+    def gui_err_show_info(self, arg1, arg2):   
         messagebox.showinfo(arg1, arg2)
     
-    def gui_err_showwarning(self, arg3, arg4):
+    def gui_err_show_warning(self, arg3, arg4):
         messagebox.showwarning(arg3, arg4)
 
-    def gui_err_showerror(self, arg5, arg6):
+    def gui_err_show_error(self, arg5, arg6):
         messagebox.showerror(arg5, arg6)
