@@ -35,7 +35,8 @@ ask_for_admin = 'asadmin'
 # this class allows the developer to do things like ask for privilages, access the file system, execute files and more
 class System():
         # This asks the user for admin privalages
-        def askadmin(self):
+        @staticmethod
+        def askadmin():
                 try:
                     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
                 
@@ -60,39 +61,47 @@ class System():
         # this can be used so if your program has dependencies you can easily use this funtion to install required libraries for your program!
         # Always make sure you have the users permission to install the dependencies/libraries
         # also make sure the libraries you are using are safe to use
-        def dep_install(self, libname):
+        @staticmethod
+        def dep_install(libname):
                 os.system(f"pip install {libname}")
         
         
 
         
-        def create_File(self, filepath):
+        @staticmethod
+        def create_File(filepath):
             open(f"{filepath}", "x")
         
         
-        def move_File(self, filepath1, filepath2):
+        @staticmethod
+        def move_File(filepath1, filepath2):
                 os.rename(filepath1, filepath2)
             
         
 
-        def remove_File(self, filename):
+        @staticmethod
+        def remove_File(filename):
             os.remove(filename)
         
 
-        def exec_File(self, filename1):
+        @staticmethod
+        def exec_File(filename1):
             os.startfile(filename1)
 
         
-        def exec_cmd(self, cmd):
+        @staticmethod
+        def exec_cmd(cmd):
             os.system(cmd)
         
-        def exec_CommandPrompt(self, cmd1):
+        @staticmethod
+        def exec_CommandPrompt(cmd1):
                 os.system("cmd /k " + cmd1)
 
 
 class maths():
     # Basic Math interpreter made for the user
-        def ExternalPromptMath(self):
+        @staticmethod
+        def ExternalPromptMath():
             print("syntax: num operator num")
             print("+ is Addition, - is substration, * is Multiplication / is division")
             while True:
@@ -103,16 +112,20 @@ class maths():
                         print("Error, incorrect value given! Please enter a correct value")
         
         # Allowing the developer to perform calculations behind the scenes
-        def add(self, num1, num2):
+        @staticmethod
+        def add(num1, num2):
             print(num1 + num2)
             
-        def subtract(self, num1, num2):
+        @staticmethod
+        def subtract(num1, num2):
             print(num1 - num2)
 
-        def multiply(self, num1, num2):
+        @staticmethod
+        def multiply(num1, num2):
             print(num1 * num2)
 
-        def divide(self, num1, num2):
+        @staticmethod
+        def divide(num1, num2):
             print(num1 / num2)
 #This class is currently useless and isn't properly capable yet. functions are broken/don't work properly.
 # to use this class uncomment the lines below to use it. be warned however that they might not work as you expect.
@@ -141,7 +154,8 @@ class maths():
 
 
 class errors():
-    def cli_err_warning(self):
+    @staticmethod
+    def cli_err_warning():
         print("""
                           (_)            
  __      ____ _ _ __ _ __  _ _ __   __ _ 
@@ -152,7 +166,8 @@ class errors():
                                    |___/        
         """)
         
-    def cli_err_error(self):
+    @staticmethod
+    def cli_err_error():
         print("""
    ___ _ __ _ __ ___  _ __ 
   / _ \ '__| '__/ _ \| '__|
@@ -161,11 +176,14 @@ class errors():
 """)
     
     #these 3 show GUI error boxes with the desired text, very convenient for the developer
-    def gui_err_show_info(self, arg1, arg2):   
+    @staticmethod
+    def gui_err_show_info(arg1, arg2):   
         messagebox.showinfo(arg1, arg2)
     
-    def gui_err_show_warning(self, arg3, arg4):
+    @staticmethod
+    def gui_err_show_warning(arg3, arg4):
         messagebox.showwarning(arg3, arg4)
 
-    def gui_err_show_error(self, arg5, arg6):
+    @staticmethod
+    def gui_err_show_error(arg5, arg6):
         messagebox.showerror(arg5, arg6)
