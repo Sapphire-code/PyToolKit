@@ -12,13 +12,9 @@
 #|#############################################################################|#
 
 # Importing required libraries
-from importlib.resources import path
 import os
 import sys
 import platform
-import time
-from time import strftime
-import subprocess
 import ctypes
 from tkinter import * 
 from tkinter import messagebox
