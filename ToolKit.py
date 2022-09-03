@@ -18,6 +18,9 @@ import platform
 import ctypes
 from tkinter import * 
 from tkinter import messagebox
+import math
+import statistics
+from collections import Counter
 #Hiding tkinter root window.
 root = Tk()
 root.geometry("1x1")
@@ -123,29 +126,22 @@ class maths():
         @staticmethod
         def divide(num1, num2):
             print(num1 / num2)
-#This class is currently useless and isn't properly capable yet. functions are broken/don't work properly.
-# to use this class uncomment the lines below to use it. be warned however that they might not work as you expect.
-#class network():
-#    def start_netsh(self):
-#        try:
-#            os.startfile("C:\\Windows\\System32\\netsh.exe")
-#       except FileNotFoundError:
-#            print("Error, netsh.exe was not found")
-#            input("Press Enter To Exit...")
-#            exit()
-    
+        
 
-# using netsh to get wifi passwords on the system
-#    def explorenet_PromptCli(self):
-#        os.system("cls")
-#        os.system("netsh wlan show profiles")
-#        wifi = input("Which Wifi's password do you want?: ")
-#        os.system('netsh wlan show profiles name="' + wifi + '" key=clear')
-#        input("Press Enter To Exit...")
+        @staticmethod
+        def GetMean(MeanVal):
+            print(sum(MeanVal) / len(MeanVal))
+        
+        @staticmethod
+        def GetMedian(MedianVal):
+            print(statistics.median(MedianVal))
+        
+        @staticmethod
+        def GetMode(ModeVal):
+            print(statistics.mode(ModeVal))
+
+
     
-#    def downloadnet(self, folderPath):
-#        print("this function requires admin privilages please make sure you have admin")
-#        os.system(f"netsh wlan export profile folder={folderPath} key=clear")
 
 
 

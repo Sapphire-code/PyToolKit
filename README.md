@@ -8,3 +8,6 @@ A toolkit file for anybody to use, made to simplify advanced tasks, use powerful
 
 #### To contribute raise an issue in the issues tab of the repository and suggest code you would like to be added and a reason why
 [Contribute](https://github.com/Sapphire-code/PyToolKit/issues)
+
+#### all the forks of this repository
+[Fork by KidCoderT](https://github.com/KidCoderT/systool-kit)
