@@ -130,7 +130,7 @@ class maths():
 
         @staticmethod
         def GetMean(MeanVal):
-            print(sum(MeanVal) / len(MeanVal))
+            print(statistics.mean(MeanVal))
         
         @staticmethod
         def GetMedian(MedianVal):
