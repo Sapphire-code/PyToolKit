@@ -20,7 +20,6 @@ from tkinter import *
 from tkinter import messagebox
 import math
 import statistics
-from collections import Counter
 #Hiding tkinter root window.
 root = Tk()
 root.geometry("1x1")
