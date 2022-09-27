@@ -8,6 +8,7 @@
 #|        this is a python toolkit was made with multipurpose apps in mind     |#
 #|          this toolkit just makes some stuff easier for the developer        |#
 #|        Please read the documentation to learn all the features you get.     |#
+#|        Documentation: https://sapphirekr.gitbook.io/how-to-use-pytoolkit    |#
 #|                                   GOODLUCK!                                 |#
 #|#############################################################################|#
 
