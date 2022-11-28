@@ -3,8 +3,6 @@
 A module for anybody to use, made to simplify advanced tasks, use powerful one-liner functions without losing your control.
 <br>
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-## This module is now out-dated, still usable but not suggested.
-I am currently working on a newer version of the code, that can be installed with pip.
 
 <hr>
 
